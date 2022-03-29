@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
+    <title>Web Development</title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/6deb308963.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="../public/styles/web_development.css" />
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+
+  <body>
+    <div id="top_coupon_ribbon">
+      Save INR 3150 on Web Development training. Use Coupon: DEGREE10. Offer
+      ends in <span id="coupon_coutdown"></span>. Enroll Now!
+    </div>
+    <div id="navbar">
+      <div id="logo_thumbnail">
+        <img
+          src="https://trainings.internshala.com/static/images/logo.svg"
+          alt="trainings.internshala"
+        />
+      </div>
+      <div id="dropdown">
+        <div id="dropdown_div">
+          <div id="dropdown_hover">
+            Online Trainings<i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+        <div id="login">Login</div>
+      </div>
+    </div>
+    <hr id="nav_hr" />
+    <div id="banner_container">
+      <div id="hover_div">
+        <div id="hover_div_flex">
+          <div id="hover_div_left">
+            <div id="hover_box_left">
+              <div>Most Popular</div>
+              <div>Programming</div>
+              <div>Business & Management</div>
+              <div>Core Engineering</div>
+              <div>Data Science</div>
+              <div>Design</div>
+              <div>Creative Arts</div>
+              <div>Language</div>
+            </div>
+          </div>
+          <div id="hover_div_right">
+            <div id="hover_box_right">
+              <div>Web Development</div>
+              <div>Digital Marketing</div>
+              <div>Programming with Python</div>
+              <div>AutoCAD</div>
+              <div>Advanced Excel</div>
+              <div>Machine Learning</div>
+              <div>Android App Development</div>
+              <div>Data Science</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="banner_left">
+        <div id="left_banner_content">
+          <div class="certified_tag">Certified online training</div>
+          <h1>Learn Web Development</h1>
+          <p class="course-brief">
+            Learn HTML/CSS, MySQL, PHP, JavaScript, and React and build a
+            website from scratch!
+          </p>
+          <div id="tags">
+            <div id="flex1">
+              <div><i class="fa-solid fa-star"></i> 4.1</div>
+              <div><i class="fa-solid fa-user-group"></i> 64,197 Students</div>
+              <div><i class="fa-solid fa-calendar"></i> 6 Weeks</div>
+            </div>
+            <div id="flex2">
+              <div>
+                <i class="fa-solid fa-handshake"></i> Placement Assistance
+              </div>
+              <div><span class="material-icons">volume_up</span> English, हिन्दी</div>
+            </div>
+          </div>
+          <div id="offer_tag_container">
+            <div>
+              <img
+                src="https://trainings.internshala.com/cached_uploads/sale/BOGO/bogo_sale.png"
+                alt=""
+              />
+            </div>
+            <div id="offer_tag_description">
+              1+1 Offer: Get Internship & Job Preparation training FREE on
+              purchase of Web Development training!
+            </div>
+          </div>
+        </div>
+      </div>
+    <div id="banner_right">
+        <div id="form_container">
+          <div id="form_content">
+            <form action="">
+              <div>
+                <p>Email Id</p>
+                <input id="mail" placeholder="john@example.com" type="email" />
+              </div>
+              <div>
+                <p>Create password</p>
+                <input
+                  id="pass"
+                  placeholder="must be at least 6 characters"
+                  type="password"
+                />
+              </div>
+              <div id="names_input">
+                <div>
+                  <p>First Name</p>
+                  <input id="name" placeholder="John" type="text" />
+                </div>
+                <div>
+                  <p>Last Name</p>
+                  <input id="surname" placeholder="Doe" type="text" />
+                </div>
+              </div>
+              <div>
+                <p>Mobile Number</p>
+                <div id="mobile_details">
+                  <div id="country_code">
+                    <input value="+91" type="text" />
+                  </div>
+                  <div>
+                    <input id="cont_num" placeholder="9689274940" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div id="code_and_batch">
+                <div id="code">
+                  <p>Coupon Code</p>
+                  <input id="coupon_code" value="DEGREE10" type="text" />
+                </div>
+                <div>
+                  <p>Choose Batch</p>
+                  <select name="" id="batch">
+                    <option value="">23rd Feb, 2022</option>
+                    <option value="">1st Mar, 2022</option>
+                    <option value="">15th Mar, 2022</option>
+                    <option value="">1st Apr, 2022</option>
+                    <option value="">15th Apr, 2022</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <p>I want to learn web development to</p>
+                <select name="" id="objective">
+                  <option value="">Gain a new skill</option>
+                  <option value="">Build my own project</option>
+                  <option value="">Get an intership/job in furure</option>
+                  <option value="">Gain a certificate</option>
+                  <option value="">Fulfil college requirement</option>
+                </select>
+              </div>
+              <div id="bill">
+                <span id="must_pay">₹1349</span
+                ><span id="original_price">4499</span>
+                <p>valid till 2nd Mar</p>
+              </div>
+              <button>Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Training Highlights</h2>
+    <div id="training_highlights">
+      <div>
+        <div class="tr_high_logo">
+          <div class="logo_div" id="wfh_logo"></div>
+        </div>
+        <div class="tr_high_descr">
+          <div class="descr_div">
+            <b>Learn from home</b>
+            <p>Stay safe indoors</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tr_high_logo">
+          <div class="logo_div" id="certif_logo"></div>
+        </div>
+        <div class="tr_high_descr">
+          <div class="descr_div">
+            <b>Certificate of training</b>
+            <p>from Internshala Trainings</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tr_high_logo">
+          <div class="logo_div" id="assist_logo"></div>
+        </div>
+        <div class="tr_high_descr">
+          <div class="descr_div">
+            <b>Placement assistance</b>
+            <p>To build your career</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tr_high_logo">
+          <div class="logo_div" id="tutorial_logo"></div>
+        </div>
+        <div class="tr_high_descr">
+          <div class="descr_div">
+            <b>138 video tutorials</b>
+            <p>Learn anytime, anywhere</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tr_high_logo">
+          <div class="logo_div" id="proj_logo"></div>
+        </div>
+        <div class="tr_high_descr">
+          <div class="descr_div">
+            <b>Build 1 project</b>
+            <p>For hands-on practice</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tr_high_logo">
+          <div class="logo_div" id="doubt_logo"></div>
+        </div>
+        <div class="tr_high_descr">
+          <div class="descr_div">
+            <b>Doubt clearing</b>
+            <p>Through Q&A forum</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tr_high_logo">
+          <div class="logo_div" id="lang_logo"></div>
+        </div>
+        <div class="tr_high_descr">
+          <div class="descr_div">
+            <b>Learn in English or हिन्दी</b>
+            <p>As per your choice</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tr_high_logo">
+          <div class="logo_div" id="beginner_logo"></div>
+        </div>
+        <div class="tr_high_descr">
+          <div class="descr_div">
+            <b>Beginner friendly</b>
+            <p>No prior knowledge required</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tr_high_logo">
+          <div class="logo_div" id="access_logo"></div>
+        </div>
+        <div class="tr_high_descr">
+          <div class="descr_div">
+            <b>6 weeks access</b>
+            <p>To the platform</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Training syllabus</h2>
+    <div id="syllabus_prev">
+      <div>
+        <div class="syll_prev_logo">
+          <div id="vid_tut_logo"></div>
+        </div>
+        <div class="syll_prev_text">
+          <p>92 video tutorials</p>
+        </div>
+      </div>
+      <div>
+        <div class="syll_prev_logo">
+          <div id="assignments_logo"></div>
+        </div>
+        <div class="syll_prev_text">
+          <p>3 assignments</p>
+        </div>
+      </div>
+      <div>
+        <div class="syll_prev_logo">
+          <div id="project_logo"></div>
+        </div>
+        <div class="syll_prev_text">
+          <p>1 project</p>
+        </div>
+      </div>
+    </div>
+    <p id="download_sent">
+      After completing the training, you can also download videos for future
+      reference
+    </p>
+    <div id="syllabus_container">
+      <div class="horizontal_containers container1">
+        <div class="lang_container">
+          <div><p>HTML</p></div>
+          <div><i class="fa-solid fa-angle-down"></i></div>
+        </div>
+        <div class="lang_descr">
+          <!-- <div><i class="fa-thin fa-file-lines"></i>6 Topics</div> -->
+          <div><span class="material-icons">description</span>6 Topics</div>
+          <div class="demo_vid_inside">
+            <span class="material-icons">play_circle_outline</span>1 Demo video inside
+          </div>
+        </div>
+      </div>
+      <div class="hidden_container hid_container1">
+        <div class="hidden_cont">
+          <div>
+            <span class="material-icons">play_circle_outline</span><p>Training Overview Video</p>
+          </div>
+        <ul>
+          <li>About the Training</li>
+          <li>Basic Concepts of Web Development</li>
+          <li>Setting Up Local Environment</li>
+          <li>Introduction to HTML</li>
+          <li>HTML Tags</li>
+          <li>Lists, Tables, and Forms</li>
+        </ul>
+        </div>
+      </div>
+      <div class="horizontal_containers container2">
+        <div class="lang_container">
+          <div><p>CSS</p></div>
+          <div><i class="fa-solid fa-angle-down"></i></div>
+        </div>
+        <div class="lang_descr">
+          <div><span class="material-icons">description</span>11 Topics</div>
+          <div class="demo_vid_inside">
+            <span class="material-icons">play_circle_outline</span>1 Demo video inside
+          </div>
+        </div>
+      </div>
+      <div class="hidden_container hid_container2">
+        <div class="hidden_cont">
+          <div>
+            <span class="material-icons">play_circle_outline</span><p>Introduction To CSS</p>
+          </div>
+        <ul>
+          <li>CSS Selectors</li>
+          <li>Unit: Length and Color</li>
+          <li>CSS Properties</li>
+          <li>Box Model</li>
+          <li>Inspect Element</li>
+          <li>Display</li>
+          <li>Position</li>
+          <li>Structuring a Web Page</li>
+          <li>Flexbox</li>
+          <li>Media Queries</li>
+        </ul>
+        </div>
+      </div>
+      <div class="horizontal_containers container3">
+        <div class="lang_container">
+          <div><p>Bootstrap</p></div>
+          <div><i class="fa-solid fa-angle-down"></i></div>
+        </div>
+        <div class="lang_descr">
+          <div><span class="material-icons">description</span></i>3 Topics</div>
+          <div class="demo_vid_inside">
+            <span class="material-icons">play_circle_outline</span>1 Demo video inside
+          </div>
+        </div>
+      </div>
+        <div class="hidden_container hid_container3">
+        <div class="hidden_cont">
+          <div>
+            <span class="material-icons">play_circle_outline</span><p>Layout</p>
+          </div>
+        <ul>
+          <li>Introduction to Bootstrap</li>
+          <li>Other Components</li>
+        </ul>
+        </div>
+      </div>
+      <div class="horizontal_containers container4">
+        <div class="lang_container">
+          <div><p>DBMS</p></div>
+          <div><i class="fa-solid fa-angle-down"></i></div>
+        </div>
+        <div class="lang_descr">
+          <div><span class="material-icons">description</span></i>9 Topics</div>
+        </div>
+      </div>
+      <div class="hidden_container hid_container4">
+        <div class="hidden_cont">
+          <div>
+            <span class="material-icons">play_circle_outline</span><p>Introduction To CSS</p>
+          </div>
+        <ul>
+          <li>Introduction to DBMS</li>
+          <li>Basic Concepts and Terminologies</li>
+          <li>SQL Queries - Database Related</li>
+          <li>SQL Queries - Tables Related</li>
+          <li>SQL Queries - Records Related</li>
+          <li>Designing a Database</li>
+          <li>Database Relationships</li>
+          <li>Join Queries</li>
+          <li>Importing and Exporting a Database</li>
+        </ul>
+        </div>
+      </div>
+      <div class="horizontal_containers container5">
+        <div class="lang_container">
+          <div><p>PHP</p></div>
+          <div><i class="fa-solid fa-angle-down"></i></div>
+        </div>
+        <div class="lang_descr">
+          <div><span class="material-icons">description</span></i>10 Topics</div>
+        </div>
+      </div>
+      <div class="hidden_container hid_container5">
+        <div class="hidden_cont">
+          <div>
+            <span class="material-icons">play_circle_outline</span><p>Introduction To CSS</p>
+          </div>
+        <ul>
+          <li>PHP: Introduction and Installation</li>
+          <li>Variables and Operators</li>
+          <li>Conditional Statements</li>
+          <li>Loops</li>
+          <li>Arrays</li>
+          <li>Strings</li>
+          <li>Functions</li>
+          <li>Form Submission</li>
+          <li>Database Communication</li>
+          <li>Cookies and Sessions</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
+<script type="module" src="../public/scripts/web_development.js"></script>

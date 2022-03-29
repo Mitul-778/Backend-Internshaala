@@ -1,0 +1,343 @@
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body{
+  padding-left: 20px;
+}
+
+header {
+  box-sizing: border-box;
+  margin-right: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  font-weight: bolder;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
+  height: 70px;
+  
+}
+.logo {
+  margin-right: auto;
+  margin-top: 0;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+#nav_link > li,
+a,
+button {
+  font-family: "Inter var", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #484848;
+  text-decoration: none;
+  margin-right: 5px;
+}
+#nav_link > li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 14px;
+}
+#nav_link li a:hover {
+  color: #008bde;
+}
+#register {
+  background-color: #008bde;
+  color: white;
+  margin-right: 60px;
+}
+.button {
+  color: #008bde;
+  border: 1px solid #008bde;
+  background-color: white;
+  padding: 8px 26px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover {
+  color: #0082d4;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
+}
+#offer {
+  background-color: #ff8c00;
+  color: white;
+  font-size: 12px;
+  padding: 6px;
+  border-radius: 5px;
+  margin-left: 2px;
+}
+/*---------------------------------------------------------*/
+
+.hover {
+  border: 1px solid whitesmoke;
+  margin: 28px 2px;
+  padding: 15px 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  width: 26%;
+  height: 300px;
+  /* line-height: 10px; */
+  position: absolute;
+  left: 650px;
+  z-index: 1;
+  display: none;
+  background: #fff;
+}
+
+.hover h3 {
+  margin-bottom: 10px;
+}
+.hover--navbar {
+  display: flex;
+  gap: 10px;
+}
+.hover--navbar > div:nth-child(2) {
+  border-left: 1px solid dimgray;
+  padding: 10px 0;
+}
+.hover--navbar > div:nth-child(2) a {
+  line-height: 2.4;
+  font-size: 12px;
+  margin: 0;
+}
+.hover--navbar ul {
+  list-style: none;
+  font-family: Theory-web-ul;
+}
+
+.nav-hover:hover .hover {
+  display: block;
+}
+.hover--navbar div p {
+  font-size: 12px;
+}
+.hover--navbar div h5 {
+  line-height: 0.1;
+  font-size: 14px;
+  padding: 10px;
+}
+.hover--navbar div h5:hover {
+  cursor: pointer;
+  color: #0082d4;
+  border-radius: 0 5px 5px 0;
+  background-color: #edf7fe;
+}
+
+#last {
+  font-weight: bold;
+}
+#container {
+  display: flex;
+  /* border:1px solid black; */
+  height: 450px;
+}
+#design {
+  width: 70%;
+  /* border:1px solid red; */
+  background-image: url("https://internshala.com/static/images/registration/student/background-768.png");
+  background-size: cover;
+
+  height: 100%;
+}
+#data {
+  width: 30%;
+  /* border: 1px solid green; */
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 2%;
+  margin-left: 2%;
+  /* height: 420px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#head > h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+  /* background-image: url("https://internshala.com/static/images/registration/student/brush_stroke.svg"); */
+}
+#head > p {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 520;
+}
+#int {
+  display: flex;
+  height: 25px;
+  /* border:1px solid black; */
+}
+#int > img {
+  height: 100%;
+  /* margin-top: 0px; */
+}
+#int > h4 {
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-top: 5px;
+}
+form > input {
+  width: 300px;
+  height: 40px;
+  border:1px solid lightgray
+}
+form>input:hover{
+  border: 1.4px solid #008bdc;
+}
+form > p {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+#first_name,
+#last_name {
+  width: 150px;
+  height: 40px;
+}
+#doe {
+  display: flex;
+  width: 230px;
+  justify-content: space-between;
+}
+form > #but {
+  width: 300px;
+  color: white;
+  background-color: #00a5ec;
+  height: 40px;
+  border: 0px;
+  cursor: pointer;
+
+}
+#but:hover{
+  background-color: #008bdc;
+}
+#reg {
+  margin-left: 12%;
+}
+#centre {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  /* color: #008bdc; */
+}
+/* #navbar {
+  display: flex;
+  height: 80px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#img {
+  flex: 6;
+  margin-top: 1%;
+}
+#text {
+  flex: 4;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+} */
+#free {
+  display: flex;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-image: url("https://internshala.com/static/images/registration/student/brush_stroke.svg");
+  background-size: contain;
+  width: 80px;
+  color: white;
+}
+#ride {
+  display: flex;
+}
+#text > p {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+footer {
+  width: 100%;
+  background-color: #333;
+  height: 480px;
+}
+#titles {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+#titles > div {
+  width: 24%;
+  padding-left: 10px;
+  height: 340px;
+  line-height: 1;
+  margin-top: 20px;
+}
+#tag {
+  background-color: #ff8c00;
+  color: white;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 12px;
+  padding: 2px;
+  font-family: "Open Sans", sans-serif;
+}
+hr {
+  width: 90%;
+  margin: auto;
+  color: dimgray;
+}
+#social_media {
+  width: 90%;
+  margin: 26px auto;
+}
+#play {
+  display: inline-block;
+  color: #fff;
+  margin-right: 32px;
+  border: 1px solid #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+#icons {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 10px;
+}
+#icons a {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#copyright {
+  float: right;
+  margin-top: 10px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

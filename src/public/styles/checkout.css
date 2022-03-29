@@ -1,0 +1,100 @@
+body,.logo{
+    background-color: whitesmoke;
+}
+.logo{
+    padding-bottom: 20px;
+}
+#container{
+    width: 70%;
+    /* border: 1px solid red; */
+    margin: auto;
+    background-color: white;
+}
+.box{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.left_box{
+    border: 1px solid dimgray;
+    border-radius: 5px 5px 0 0;
+    flex: 6;
+    height: 400px;
+}
+.right_box{
+    border: 1px solid black;
+    flex: 4;
+    height: 150px;
+    line-height: 0.4;
+}
+.left_box > p{
+    background-color: gainsboro;
+    margin: 0;
+    font-size: 18px;
+    border-radius: 5px 5px 0 0;
+    padding: 8px;
+}
+.table{
+    display: flex;
+    gap: 20px;
+}
+.payment_list{
+    flex: 3;
+}
+.payment_list p:nth-child(1){
+    border: 0;
+}
+.payment_list p{
+    border: 1px solid dimgray;
+    border-left: 0;
+    margin: 0;
+    padding: 10px;
+}
+.details{
+    flex: 7;
+}
+.arrow{
+    margin-left: 49px;
+}
+#card_no{
+margin: 0;
+width: 50%;
+height: 22px;
+}
+#images > img{
+width: 42px;
+height: 18px;
+margin: 2px;
+vertical-align: middle;
+}
+#cvv{
+    margin-left: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+select{
+    height: 24px;
+    margin-right: 16px;
+}
+button{
+    margin: 20px 16px 0 0 ;
+    height: 24px;
+    background-color: rgb(37, 211, 102);
+    color: white;
+    border: 1px solid dimgray;
+}
+hr{
+    width: 300px;
+}
+h4{
+    padding: 0 10px 10px 10px;
+    font-size: 14px;
+}
+#p{
+    padding: 0 10px;
+    font-size: 14px;
+}
+#p1{
+    padding: 0 0 0 10px;
+    font-size: 16px;
+}
