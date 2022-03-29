@@ -39,7 +39,7 @@ const navbar = () => {
         </div>
       </li>
       <li class="nav-hover">
-        <a href="../../html/web_development.html"
+        <a href="./../html/web_development.html"
           >Online Training <span id="offer">OFFER</span
           ><i class="fa-solid fa-caret-down"></i
         ></a>
