@@ -3,7 +3,7 @@ document.getElementById("sidebar").innerHTML = sidebar();
 
 let parent = document.getElementById("main");
 
-// 
+
 // localStorage.setItem("data", JSON.stringify(data));
 
 const cardData = async()=>{
