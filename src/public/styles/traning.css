@@ -154,7 +154,7 @@ body {
 
 /* slider------------------------------------------------------------------- */
 
-.slider{
+.slider {
   /* width: 800px; */
   /* width: 100vw; */
   height: 400px;
@@ -165,24 +165,23 @@ body {
   overflow: hidden;
 }
 
-.slides{
+.slides {
   width: 500%;
   /* width: 100vw; */
   height: 400px;
   display: flex;
 }
 
-.slides input{
+.slides input {
   display: none;
 }
 
-.slide{
+.slide {
   width: 20%;
   transition: 2s;
-
 }
 
-.slide img{
+.slide img {
   /* width: 800px; */
   width: 100vw;
   height: 400px;
@@ -190,7 +189,7 @@ body {
 
 /* css for manual slide navigation */
 
-.navigation-manual{
+.navigation-manual {
   position: absolute;
   /* width: 800px; */
   width: 100vw;
@@ -200,7 +199,7 @@ body {
   justify-content: center;
 }
 
-.manual-btn{
+.manual-btn {
   border: 2px solid #9cafbb;
   background-color: #9cafbb;
   padding: 5px;
@@ -209,22 +208,22 @@ body {
   transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
   margin-right: 10px;
 }
 
-.manual-btn:hover{
-  background:#bb2e03 ;
+.manual-btn:hover {
+  background: #bb2e03;
   border: 2px solid #bb2e03;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked ~ .first {
   margin-left: 0;
 }
-#radio2:checked ~ .first{
+#radio2:checked ~ .first {
   margin-left: -20%;
 }
-#radio3:checked ~ .first{
+#radio3:checked ~ .first {
   margin-left: -40%;
 }
 /* #radio4:checked ~ .first{
@@ -240,13 +239,12 @@ body {
   margin-top: 460px;
 } */
 
-.navigation-auto div{
+.navigation-auto div {
   border: 2px solid #9cafbb;
   background-color: #9cafbb;
   padding: 4px;
   border-radius: 10px;
   transition: 1s;
-
 }
 
 /* .navigation-auto div:not(:last-child){
@@ -287,26 +285,29 @@ body {
 
 /* flex items=============================================== */
 
-.horizontal-container{
-  height: 270px;
+.horizontal-container {
   width: 95%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 50px;
+  padding: 0 0 20px 0;
   /* border: 1px solid khaki; */
 }
 
-.horizontal-items{
+.horizontal-items {
   height: 90%;
   width: 18%;
   margin: auto;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
   justify-content: space-evenly;
+  flex: 1 1 20%;
   /* border: 1px solid green; */
 }
 
-.cource-image{
+.cource-image {
   width: 100%;
   margin-top: 15px;
 }
@@ -336,7 +337,7 @@ body {
 
 /* new boxes start------------------------------------------ */
 
-.cource-title{
+.cource-title {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -344,13 +345,13 @@ body {
   align-items: center;
 }
 
-.cource-title p{
+.cource-title p {
   /* align-items: center; */
   font-weight: 700;
   font-size: 14px;
 }
 
-.cource-desc{
+.cource-desc {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -358,12 +359,12 @@ body {
   margin-top: -20px;
 }
 
-.cource-desc p{
+.cource-desc p {
   font-size: 12px;
   /* padding-top: 10px; */
 }
 
-.cource-desc1{
+.cource-desc1 {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -371,12 +372,12 @@ body {
   margin-top: -30px;
 }
 
-.cource-desc1 p{
+.cource-desc1 p {
   font-size: 12px;
   padding-top: 10px;
 }
 
-.cource-duration{
+.cource-duration {
   width: 90%;
   display: flex;
   /* padding: 22px; */
@@ -386,17 +387,16 @@ body {
   justify-content: space-between;
 }
 
-.cource-time{
+.cource-time {
   font-size: 11px;
   color: rgb(104, 100, 100);
 }
 
-.know-more{
+.know-more {
   font-size: 11px;
   font-weight: 700;
   color: rgb(0, 165, 236);
 }
-
 
 /* new boxes end------------------------------------------ */
 
