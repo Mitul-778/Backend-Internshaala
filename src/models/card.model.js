@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-const mongoose = require("mongoose");
-=======
 const mongoose = require("mongoose");
 
 const cardSchema = new mongoose.Schema(
@@ -22,4 +19,3 @@ const cardSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model("cards", cardSchema);
->>>>>>> Stashed changes
