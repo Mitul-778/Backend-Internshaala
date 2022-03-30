@@ -17,8 +17,8 @@ const slideShow = () => {
 };
 slideShow();
 
-import navbar from "../scripts/navbar.js";
+import navbar from "./navbar.js";
 document.querySelector("header").innerHTML = navbar();
 
-import footer from "../scripts/footer.js";
+import footer from "./footer.js";
 document.querySelector("footer").innerHTML = footer();
