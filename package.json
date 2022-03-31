@@ -4,7 +4,8 @@
   "description": "Backend of Internshaala",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -26,8 +27,12 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.9",
     "nodemailer": "^6.7.3",
+<<<<<<< Updated upstream
     "passport": "^0.5.2",
     "passport-google-oauth2": "^0.2.0",
     "uuid": "^8.3.2"
+=======
+    "nodemon": "^2.0.15"
+>>>>>>> Stashed changes
   }
 }
