@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
-<<<<<<< Updated upstream
-=======
+
 const bcrypt = require("bcrypt");
 
 const userSchema = new mongoose.Schema(
@@ -30,4 +29,4 @@ userSchema.methods.checkPassword = function (password) {
 const User = mongoose.model("user", userSchema);
 
 module.exports = User;
->>>>>>> Stashed changes
+
