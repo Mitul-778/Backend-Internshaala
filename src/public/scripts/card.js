@@ -111,7 +111,7 @@ let internshipData = (data) =>
     });
   };
 // let parent = document.getElementById("main");
-internshipData(data);
+// internshipData(data);
 
 let wfh_checkbox = document.getElementById("wfh");
 
