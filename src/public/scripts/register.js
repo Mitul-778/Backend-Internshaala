@@ -8,10 +8,6 @@ document.querySelector(".logo").addEventListener("click", function () {
   window.location.href = "./../html/index.html";
 });
 
-document.querySelector("#google").addEventListener("click", function () {
-  window.location.href = "http://localhost:5000/auth/google";
-});
-
 document.getElementById("but").addEventListener("click", myFunction);
 var arr = JSON.parse(localStorage.getItem("details")) || [];
 function myFunction(event) {
