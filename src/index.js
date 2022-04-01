@@ -3,9 +3,16 @@ const app = express();
 const cors = require("cors");
 const trainingController = require("./controllers/training.controller")
 const cardController =require("./controllers/card.controller")
+// const userController = require("./controllers/user.controller")
+const adminController = require("./controllers/admin.controller")
 const passport = require("../src/configs/google.OAuth")
+const path =  require("path");
 
+// const static_path = path.join(__dirname, "/html")
+
+// app.use(express.static(static_path));
 app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 
 app.use(cors())
 

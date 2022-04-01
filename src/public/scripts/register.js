@@ -68,11 +68,11 @@ function theFunction(event) {
   }
 }
 
-let google1 =document.getElementById("google");
-google1.addEventListener("click",function(){
-  loginWithGoogle()
-})
+let google1 = document.getElementById("google");
+google1.addEventListener("click", function () {
+  loginWithGoogle();
+});
 
-function loginWithGoogle(){
-  window.location.href="http://localhost:5000/auth/google"
+function loginWithGoogle() {
+  window.location.href = "http://localhost:5000/auth/google";
 }
