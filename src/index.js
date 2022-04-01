@@ -10,11 +10,12 @@ const {
 } = require("./controllers/auth.controller");
 const userController = require("./controllers/user.controller")
 const passport = require("../src/configs/google.OAuth")
-const path =  require("path");
+// const path =  require("path");
 
 app.use("/register", register)
 app.use("/login", login)
 app.use("/users", userController)
+
 // const static_path = path.join(__dirname, "/html")
 
 // app.use(express.static(static_path));
