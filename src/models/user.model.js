@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema(
     lastName: { type: String, required: false },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
-    role: [{ type: String, default: "customer" }],
+    role: { type: String, required: false, default: "customer" },
   },
   {
     timestamps: true,
@@ -25,6 +25,6 @@ userSchema.methods.checkPassword = function (password) {
   return bcrypt.compareSync(password, this.password);
 };
 
-module.exports = mongoose.model("user", userSchema);
+const User = mongoose.model("user", userSchema);
 
-
+module.exports = User;
