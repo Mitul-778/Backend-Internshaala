@@ -5,7 +5,7 @@ body {
 
 header {
   box-sizing: border-box;
-  margin-right: 0;
+  margin:0 0 20px 0 ;
   padding: 0;
   display: flex;
   justify-content: flex-end;
@@ -144,7 +144,7 @@ button {
   margin: auto;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-top: 2%;
+  /* margin-top: 2%; */
   margin-left: 2%;
   /* height: 420px; */
   padding-top: 10px;
@@ -180,6 +180,8 @@ button {
   display: flex;
   align-items: center;
   margin: auto;
+  padding: 10px;
+  border: 1px solid gray
 }
 #signup-google {
   margin-left: 10px;
@@ -263,6 +265,7 @@ footer {
   width: 100%;
   background-color: #333;
   height: 480px;
+  margin: 20px 0 0 0;
 }
 #titles {
   width: 92%;

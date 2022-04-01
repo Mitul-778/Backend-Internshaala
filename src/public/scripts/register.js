@@ -9,7 +9,6 @@ document.querySelector(".logo").addEventListener("click", function () {
 });
 
 document.getElementById("but").addEventListener("click", myFunction);
-var arr = JSON.parse(localStorage.getItem("details")) || [];
 function myFunction(event) {
   event.preventDefault();
   var mail = document.getElementById("mail").value;
@@ -17,16 +16,29 @@ function myFunction(event) {
   var firstName = document.getElementById("first_name").value;
   var lastName = document.getElementById("last_name").value;
 
-  var obj = {
-    mail: mail,
+  var data = {
+    email: mail,
     password: password,
     firstName: firstName,
     lastName: lastName,
   };
-  arr.push(obj);
-  localStorage.setItem("details", JSON.stringify(arr));
 
-  if (mail === "" || password === "" || firstName === "" || lastName === "") {
+  fetch("http://localhost:5000/register", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Success:", data);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+  
+  if (email === "" || password === "" || firstName === "" || lastName === "") {
     alert("please fill all the fields");
   } else {
     alert("Sign Up success");
@@ -48,15 +60,22 @@ document.querySelector("#btns").addEventListener("click", theFunction);
 
 function theFunction(event) {
   event.preventDefault();
-  let mail = document.getElementById("em").value;
-  let ps = document.getElementById("ps").value;
+  fetch('http://localhost:5000/users',{
+    method:"GET"
+  })
+  .then(response => response.json())
+  .then(data => logIn(data));
+}
 
+function logIn(data){
+  console.log('data:', data)
+  let mail = document.getElementById("em").value;
+  console.log('mail:', mail)
   let flag;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].mail === mail && arr[i].password === ps) {
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].email === mail) {
       alert("login Successfull");
       window.location.href = "./../html/card.html";
-
       flag = true;
       break;
     } else {
