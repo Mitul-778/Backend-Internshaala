@@ -14,6 +14,7 @@ const userController = require("./controllers/user.controller")
 const passport = require("../src/configs/google.OAuth")
 
 
+
 app.use("/training",trainingController)
 app.use("/card",cardController);
 app.use("/register", register)
