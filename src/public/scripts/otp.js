@@ -1,6 +1,7 @@
 const validate = () => {
   let value = document.getElementById("otp_value").value;
-  if (value == 1234) {
+  let otp=localStorage.getItem("otp")
+  if (value == otp) {
     alert("Payment Success !");
     window.location.href = "./../html/index.html";
   } else {

@@ -5,6 +5,7 @@ const cors = require("cors");
 app.use(cors())
 const trainingController = require("./controllers/training.controller")
 const cardController =require("./controllers/card.controller")
+const otpController = require("./controllers/otp.controller")
 const {
   register,
   login,
@@ -20,6 +21,7 @@ app.use("/card",cardController);
 app.use("/register", register)
 app.use("/login", login)
 app.use("/users", userController)
+app.use("/otp",otpController)
 
 app.get(
     "/auth/google",
