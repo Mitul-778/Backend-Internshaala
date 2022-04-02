@@ -1,9 +1,9 @@
 const slideShow = () => {
   let img_arr = [
-    "./images/int1.PNG",
-    "./images/int2.PNG",
-    "./images/int3.PNG",
-    "./images/int4.PNG",
+    'https://raw.githubusercontent.com/Mitul-778/Backend-Internshaala/main/src/public/images/int1.PNG',
+    'https://raw.githubusercontent.com/Mitul-778/Backend-Internshaala/main/src/public/images/int2.PNG',
+    'https://raw.githubusercontent.com/Mitul-778/Backend-Internshaala/main/src/public/images/int3.PNG',
+    'https://raw.githubusercontent.com/Mitul-778/Backend-Internshaala/main/src/public/images/int4.PNG'
   ];
   let slide_img = document.getElementById("slideshow_img");
   let i = 0;
