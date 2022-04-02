@@ -9,15 +9,17 @@ let x = setInterval(() => {
 
   let time_diff = dest - now;
 
-  let days = Math.floor(time_diff / (60 * 60 * 24 * 1000));
-  let hours = Math.floor(
-    (time_diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  let minutes = Math.floor((time_diff % (1000 * 60 * 60)) / (1000 * 60));
-  let sec = Math.floor((time_diff % (1000 * 60)) / 1000);
-  document.getElementById(
-    "coupon_coutdown"
-  ).innerHTML = `${days}d: ${hours}h: ${minutes}m: ${sec}s`;
+  if (time_diff > 0) {
+    let days = Math.floor(time_diff / (60 * 60 * 24 * 1000));
+    let hours = Math.floor(
+      (time_diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    let minutes = Math.floor((time_diff % (1000 * 60 * 60)) / (1000 * 60));
+    let sec = Math.floor((time_diff % (1000 * 60)) / 1000);
+    document.getElementById(
+      "coupon_coutdown"
+    ).innerHTML = `${days}d: ${hours}h: ${minutes}m: ${sec}s`;
+  }
 }, 1000);
 
 $("#dropdown_hover").click(function () {
