@@ -15,7 +15,10 @@ const userController = require("./controllers/user.controller")
 const passport = require("../src/configs/google.OAuth")
 
 
-
+app.get('/', (req, res) => {
+  // REDIRECT goes here
+  res.redirect('http://127.0.0.1:5502/src/html/index.html')
+})
 app.use("/training",trainingController)
 app.use("/card",cardController);
 app.use("/register", register)
