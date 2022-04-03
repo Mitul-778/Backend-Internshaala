@@ -11,13 +11,13 @@ document.querySelector(".logo").addEventListener("click", function () {
 document.getElementById("but").addEventListener("click", myFunction);
 function myFunction(event) {
   event.preventDefault();
-  var mail = document.getElementById("mail").value;
+  var email = document.getElementById("mail").value;
   var password = document.getElementById("password").value;
   var firstName = document.getElementById("first_name").value;
   var lastName = document.getElementById("last_name").value;
 
   var data = {
-    email: mail,
+    email: email,
     password: password,
     firstName: firstName,
     lastName: lastName,
