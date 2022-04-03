@@ -61,47 +61,15 @@ function sidebar(){
         </select>
         <br>
         </form>
-        <div id="toggle-switch">
-          <label id = "text_label">Work from Home</label>
-          <div class=""toggle>
-          <label class="switch">
-          <input id="wfh" type="checkbox" checked>
-          <span class="slider_switch"></span>
-          </label>
-          </div>
-        
-        </div>
-        <div id="toggle-switch">
-          <label id = "text_label">Part-time</label>
-          <div class=""toggle>
-          <label class="switch">
-          <input id="ptm" type="checkbox" checked>
-          <span class="slider_switch""></span>
-          </label>
-          </div>
-        </div>
+        <div id=chechboxes>
         <div>
-          <label>Desired minimum monthly stipend ( ₹ )</label>
-          <input
-            type="range"
-            min="0"
-            max="12100"
-            value="5"
-            step="3"
-            class="slider"
-            id="stipend_filter"
-            style="width:100%;
-            
-              background: linear-gradient(
-                to right,
-                #dddddd 0%,
-                #dddddd 0%,
-                #008bdc 0%,
-                #008bdc 100%
-              );"
-            "
-          />
-        </div>
+        <input  id="wfh" type="checkbox" checked>
+        <label for="">Work From Home</label>
+         </div>
+         <div>
+         <input  id="ptm" type="checkbox" checked>
+         <label for="">Part-Time</label>
+        </div></div>
         <form action="">
           <label for="">Starting from (or after)</label>
           <select type="text" placeholder="e.g.Delhi " style="line-height: -15px;color:gray;border:1;appearance: none;"  />
@@ -114,28 +82,16 @@ function sidebar(){
           </select>
         </form>
         <div>
-           <div id="toggle-switch">
+           
+           <input type="checkbox" checked>
           <label id = "text_label">Internships for women ?</label>
-          <div class=""toggle>
-         <label class="switch">
-          <input type="checkbox" checked>
-          <span class="slider_switch"></span>
-          </label>
-          </div>
-         </div>
+         
         <div>
           <div>
-           <div id="toggle-switch">
+           <input type="checkbox" checked>
            <label id = "text_label">Internships with job offer ?</label>
-          <div class=""toggle>
-         <label class="switch">
-          <input type="checkbox" checked>
-          <span class="slider_switch"></span>
-          </label>
-          </div>
          </div>
-        </div>
-        <p>-------------------------  OR  ---------------------</p>
+        <p>---------------------  OR  ---------------------</p>
         <input type="text" placeholder="e.g. Design,Mumbai,Infosys"/>
     `
 }

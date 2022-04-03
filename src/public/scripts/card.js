@@ -13,14 +13,10 @@ const cardData = async()=>{
     let data = await res.json()
     // console.log(data);
     internshipData(data);
-  } catch (error) {
-    console.log(error);
 
-  }
-}
-cardData()
 
-let internshipData = (data) =>
+
+function internshipData(data)
   // function internshipData()
   {
     parent.innerHTML = "";
@@ -146,6 +142,13 @@ ptm_checkbox.oninput = function checkboxfilterptm(parent) {
     internshipData(data);
   }
 };
+} catch (error) {
+  console.log(error);
+
+}
+}
+
+cardData()
 
 // export { internshipData };
 
