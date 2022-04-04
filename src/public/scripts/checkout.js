@@ -3,7 +3,7 @@ const validatePay = () =>{
     localStorage.setItem("otp",otp)
     const data = { otp: otp };
   
-    fetch("http://localhost:5000/otp", {
+    fetch("/otp", {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
@@ -25,6 +25,6 @@ const validatePay = () =>{
         document.getElementById('card_no').value=null;
     }else{
         alert('OTP Send !')
-        window.location.href='./../html/otp.html'
+        window.location.href='../otp.html'
     }
 }

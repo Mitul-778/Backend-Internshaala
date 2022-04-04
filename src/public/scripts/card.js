@@ -1,4 +1,4 @@
-import { sidebar } from "../scripts/sidebar.js";
+import { sidebar } from "./sidebar.js";
 document.getElementById("sidebar").innerHTML = sidebar();
 
 let parent = document.getElementById("main");
@@ -8,7 +8,7 @@ let parent = document.getElementById("main");
 
 const cardData = async()=>{
   try {
-    let res = await fetch("http://localhost:5000/card")
+    let res = await fetch("/card")
 
     let data = await res.json()
     // console.log(data);
@@ -80,7 +80,7 @@ function internshipData(data)
 
       detaildiv.onclick = () => {
         // console.log("object");
-        window.location.href = "./../html/traning.html";
+        window.location.href = "../traning.html";
       };
 
       let bottomdiv = document.createElement("div");
@@ -152,8 +152,8 @@ cardData()
 
 // export { internshipData };
 
-import footer from "../scripts/footer.js";
-import navbar from "../scripts/navbar.js";
+import footer from "./footer.js";
+import navbar from "./navbar.js";
 
 document.querySelector("footer").innerHTML = footer();
 document.querySelector("nav").innerHTML = navbar();

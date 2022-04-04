@@ -23,7 +23,7 @@ function myFunction(event) {
     lastName: lastName,
   };
 
-  fetch("http://localhost:5000/register", {
+  fetch("/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -42,7 +42,7 @@ function myFunction(event) {
     alert("please fill all the fields");
   } else {
     alert("Sign Up success");
-    window.location.href = "./../html/personal_details.html";
+    window.location.href = "../personal_details.html";
   }
 }
 
@@ -60,7 +60,7 @@ document.querySelector("#btns").addEventListener("click", theFunction);
 
 function theFunction(event) {
   event.preventDefault();
-  fetch('http://localhost:5000/users',{
+  fetch('/users',{
     method:"GET"
   })
   .then(response => response.json())
@@ -75,7 +75,7 @@ function logIn(data){
   for (let i = 0; i < data.length; i++) {
     if (data[i].email === mail) {
       alert("login Successfull");
-      window.location.href = "./../html/card.html";
+      window.location.href = "../card.html";
       flag = true;
       break;
     } else {
@@ -93,5 +93,5 @@ google1.addEventListener("click", function () {
 });
 
 function loginWithGoogle() {
-  window.location.href = "http://localhost:5000/auth/google";
+  window.location.href = "/auth/google";
 }

@@ -15,7 +15,7 @@ optionList.forEach((ele) => {
 });
 
 const trainingData = async () => {
-  let res = await fetch("http://localhost:5000/training");
+  let res = await fetch("/training");
   let data = await res.json();
   appendData(data);
 };
@@ -50,7 +50,7 @@ const appendData = (data) => {
     p2.setAttribute("class", "know-more");
     p2.textContent = "Know More";
     p2.addEventListener("click", function () {
-      document.location.href = "./../html/web_development.html";
+      document.location.href = "../web_development.html";
     });
 
     div2.append(title);
@@ -61,6 +61,6 @@ const appendData = (data) => {
   });
 };
 
-import footer from "../scripts/footer.js";
+import footer from "./footer.js";
 
 document.querySelector("footer").innerHTML = footer();

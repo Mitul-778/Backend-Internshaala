@@ -1,4 +1,4 @@
-import footer from "../scripts/footer.js";
+import footer from "./footer.js";
 document.querySelector("footer").innerHTML = footer();
 
 // Coupon Ribbon
@@ -81,8 +81,8 @@ function formSubmit(event) {
     alert("SignUp Sucessful");
     formArr.push(formobj);
     localStorage.setItem("userdata", JSON.stringify(formArr));
-    window.location.href = "./../html/index.html";
-    window.location.href = "./../html/confirm.html";
+    window.location.href = "../index.html";
+    window.location.href = "../confirm.html";
   } else {
     alert("Enter all details");
   }

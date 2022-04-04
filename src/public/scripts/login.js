@@ -24,7 +24,7 @@ function logn() {
 
       <button class="btn" id="btns">Login</button>
       
-      <p id="p">New to Intershala?<a href="./../html/register.html">Register</a></p>
+      <p id="p">New to Intershala?<a href="../register.html">Register</a></p>
     </form>
   </div>`;
 }

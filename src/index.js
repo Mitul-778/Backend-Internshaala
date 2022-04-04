@@ -3,6 +3,8 @@ const app = express();
 app.use(express.json());
 const cors = require("cors");
 app.use(cors())
+const path = require("path");
+const static_path = path.join(__dirname, "./public");
 const trainingController = require("./controllers/training.controller")
 const cardController =require("./controllers/card.controller")
 const otpController = require("./controllers/otp.controller")
@@ -15,10 +17,14 @@ const userController = require("./controllers/user.controller")
 const passport = require("../src/configs/google.OAuth")
 
 
-app.get('/', (req, res) => {
-  // REDIRECT goes here
-  res.redirect('http://127.0.0.1:5502/src/html/index.html')
-})
+app.use(express.static(static_path))
+app.get("", (req, res) => {
+  try {
+      res.send("homepage");
+  } catch (error) {
+      res.send(error);
+  }
+});
 app.use("/training",trainingController)
 app.use("/card",cardController);
 app.use("/register", register)

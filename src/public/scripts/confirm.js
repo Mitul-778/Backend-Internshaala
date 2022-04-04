@@ -24,8 +24,8 @@ document.getElementById("filled-mail").value = userData[userData.length-1].email
 console.log(userData[userData.length-1].email)
 
 
-import footer from "../scripts/footer.js";
-import navbar from "../scripts/navbar.js"
+import footer from "./footer.js";
+import navbar from "./navbar.js"
 
 document.querySelector("footer").innerHTML = footer()
 document.querySelector("nav").innerHTML = navbar()

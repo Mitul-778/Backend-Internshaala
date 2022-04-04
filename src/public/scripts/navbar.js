@@ -1,5 +1,5 @@
 const navbar = () => {
-  return `<a class="logo" href="#">
+  return `<a class="logo" href="../index.html">
     <img
       class="logo"
       src="https://internshala.com/static/images/common/new_internshala_logo.svg"
@@ -9,7 +9,7 @@ const navbar = () => {
   <nav>
     <ul id="nav_link">
       <li class="nav-hover">
-        <a href="./../html/card.html"
+        <a href="../card.html"
           >Internships<i class="fa-solid fa-caret-down"></i
         ></a>
         <div class="hover">
@@ -39,7 +39,7 @@ const navbar = () => {
         </div>
       </li>
       <li class="nav-hover">
-        <a href="./../html/web_development.html"
+        <a href="../web_development.html"
           >Online Training <span id="offer">OFFER</span
           ><i class="fa-solid fa-caret-down"></i
         ></a>
@@ -76,7 +76,7 @@ const navbar = () => {
         <a href="#">Freshers Job</a>
       </li>
       <a><button id="bu" class="button">Login</button></a>
-      <a><button onclick="window.location.href='../html/register.html'" class="button" id="register">Register</button></a>
+      <a><button onclick="window.location.href='../register.html'" class="button" id="register">Register</button></a>
     </ul>
   </nav>`;
 };
