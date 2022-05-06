@@ -1,4 +1,4 @@
-# Clone of Internshala.com  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;    &nbsp;   &nbsp;   &nbsp;   &nbsp;    <img src="https://internshala.com/static/images/common/new_internshala_logo.svg"/> 
+# Clone of Internshala.com  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;   &nbsp;    &nbsp;   &nbsp;    &nbsp;   &nbsp;   &nbsp;   &nbsp;    <img src="https://internshala.com/static/images/common/new_internshala_logo.svg"/> 
 
 In this project we have tried to make a clone of <a href="https://internshala.com/" target="_blank">Internshala Website</a>. With our efforts and the technology stack,we were able to clone the front end, integrated it with backend and added similar looks and features.
 
@@ -82,23 +82,25 @@ All the data got stored in and called from <b>Mongo Atlas cloud database</b>.
 ### _Following are the Screenshots for the reference_
 
 - **Landing Page**
-  ![Landing Page]()
+  ![Landing Page](https://raw.githubusercontent.com/Mitul-778/Backend-Internshaala/main/src/public/images/I1.PNG)
 
-- **Courses Page**
+- **Internship Page**
 
-  ![Landing Page]()
+  ![Landing Page](https://raw.githubusercontent.com/Mitul-778/Backend-Internshaala/main/src/public/images/I3.PNG)
 
 - **Sign-Up Page**
 
-  ![Landing Page]()
-
-- **Payment Page**
-
-  ![Landing Page]()
+  ![Landing Page](https://raw.githubusercontent.com/Mitul-778/Backend-Internshaala/main/src/public/images/I2.PNG)
 
 - **Skills and Courses Page**
 
-  ![Landing Page]()
+  ![Landing Page](https://raw.githubusercontent.com/Mitul-778/Backend-Internshaala/main/src/public/images/I4.PNG)
+
+  ![Landing Page](https://raw.githubusercontent.com/Mitul-778/Backend-Internshaala/main/src/public/images/I5.PNG)
+
+- **Payment Page**
+
+  ![Landing Page](https://raw.githubusercontent.com/Mitul-778/Backend-Internshaala/main/src/public/images/I6.PNG)
 
 
 
